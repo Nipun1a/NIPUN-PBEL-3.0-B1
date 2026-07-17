@@ -1,1 +1,80 @@
-venv
+# ============================================================
+# Python virtual environments
+# ============================================================
+venv/
+.env/
+env/
+.venv/
+ENV/
+
+# ============================================================
+# Python cache & compiled files
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+
+# ============================================================
+# Pytest & testing artifacts
+# ============================================================
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ============================================================
+# Generated data — do NOT commit large binary/image files
+# ============================================================
+# Embedding store (generated at runtime, can be large)
+embeddings.pkl
+embeddings.pkl.tmp
+
+# Collected face images (captured locally, not source code)
+
+
+# InsightFace downloaded model weights (~300 MB)
+# stored in home dir by default but guard local copies too
+models/
+*.onnx
+
+# ============================================================
+# Environment & secrets
+# ============================================================
+.env
+*.env
+secrets.json
+
+# ============================================================
+# IDE & editor files
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# OS-generated files
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Kiro spec tool (local workspace metadata)
+# ============================================================
+.kiro/
+
+# ============================================================
+# Build / distribution artifacts
+# ============================================================
+dist/
+build/
+*.egg-info/
+*.egg
+task.txt

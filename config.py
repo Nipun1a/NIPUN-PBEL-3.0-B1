@@ -19,10 +19,19 @@ FACE_SIZE = (160,160)
 MIN_DETECTION_CONFIDENCE = 0.6
 
 #blur amount lower means rejected
-BLUR_THRESHOLD= 60.0
+BLUR_THRESHOLD= 50.0
 
 #minimum face dimensions required to accept a frame
 MIN_FACE_SIZE = 60
+
+#default output path for the embedding store
+EMBEDDINGS_FILE = "embeddings.pkl"
+
+#max cosine distance for a match (values at or below this are considered a match)
+RECOGNITION_THRESHOLD = 0.6
+
+#alias so embedding module reuses the same blur gate value as capture time
+MIN_QUALITY_SCORE = BLUR_THRESHOLD
 
 #shift pose slightly between shots
 CAPTURE_DELAY = 0.15

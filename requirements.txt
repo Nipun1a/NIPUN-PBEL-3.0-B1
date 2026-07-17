@@ -1,4 +1,18 @@
-# this is the lib used in this
+# Core vision and ML dependencies
 opencv-python>=4.8.0
 mediapipe>=0.10.0
 numpy>=1.24.0
+
+# Face recognition backend (choose one)
+# Option A — InsightFace ArcFace 512-d (recommended)
+insightface>=0.7.3
+onnxruntime>=1.16.0        # CPU inference for InsightFace (no GPU required)
+
+# Option B — FaceNet (fallback if InsightFace is unavailable)
+# facenet-pytorch>=2.5.3
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# Testing
+pytest>=7.4.0
+hypothesis>=6.100.0        # Property-based testing for face matcher and recognizer

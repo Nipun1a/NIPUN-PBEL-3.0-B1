@@ -37,6 +37,8 @@ def main():
     students = [
         StudentDetails(name="Nipun", roll_number="101", department="CSE"),
         StudentDetails(name="Yug", roll_number="102", department="CSE"),
+        StudentDetails(name="Rajkumari", roll_number="103", department="CSE"),
+        
     ]
 
     collector = DatasetCollector()
